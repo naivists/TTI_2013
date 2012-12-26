@@ -14,7 +14,8 @@
     //even HTML content coming from Aloha editor.
     //hence we have to decode "htmlspecialchars" to avoid
     //double encoding
-    echo ($event->description) ? htmlspecialchars_decode($event->description) : __("ACTION_VIEW_NO_DESCRIPTION");
+    echo $event->description;
+    //echo ($event->description) ? htmlspecialchars_decode($event->description, ENT) : __("ACTION_VIEW_NO_DESCRIPTION");
     ?></p>
 <p>
 

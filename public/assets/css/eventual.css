@@ -44,3 +44,7 @@ aside#auth{
 #logout {
     text-align:right;
 }
+
+#setlang {
+    float:right;
+}
