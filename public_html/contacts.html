@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+	<form action="http://naivist.net/form/" id="contactForm">
+	    <fieldset>
+		<legend>You</legend>
+		<p id="formDescription">So you will have to tell more about yourself&hellip;</p>
+
+		<p>
+		    <label for="firstNameBox">Name:</label>
+		    <input
+			name="firstname" 
+			type="text"
+			id="firstNameBox" value="" />
+		</p>
+		<p>
+		    <label for="lastNameBox">Surname:</label> 
+		    <input
+			name="lasttname" type="text" id="lastNameBox" class="required"
+			value="" />
+		</p>
+		<p>
+		    <label for="birthdateBox">Birth date</label> 
+		    <input type="date" name="birthdate"
+			   id="birthdateBox" />
+		</p>
+		<p>
+		    Gender. <input 
+			type="radio"
+			name="gender"
+			value="female"
+			id="genderF" /> 
+		    <label for="genderF">Female</label> 
+
+		    <input
+			type="radio" name="gender" value="male" id="genderM" /> 
+		    <label
+			for="genderM">Male</label>
+
+		</p>
+
+	    </fieldset>
+
+	    <fieldset>
+		<legend>What would you like to tell us?</legend>
+
+		<p>
+		    <select name="replytype" id="replytype">
+			<option>Pick a message type</option>
+			<optgroup label="I like everything, but...">
+			    <option>..I have an idea</option>
+			</optgroup>
+
+			<optgroup label="Don't like anything!">
+			    <option>Complaint</option>
+			    <option>Sarcastic note</option>
+			</optgroup>
+
+		    </select>
+		</p>
+
+		<p>
+		    Comment
+		    <textarea rows="5" cols="20" name="comment" id="commentLine">
+Hi!
+You're cool!</textarea>
+		</p>
+
+		<p>
+		    I want to receive spam letters from you until I die. 
+		    <input
+			type="checkbox"
+			name="spamOk" 
+			id="spamOk"
+			value="yes"
+			checked="checked" />
+
+		</p>
+		<p>
+		    <input type="date" />
+		</p>
+		<p>
+		    Screen shot <input type="file" name="screenshot" />
+		</p>
+	    </fieldset>
+
+	    <input type="submit" value="Iesūtīt atsauksmi" id="btnSubmit" />
+
+	</form>
+    </body>
+</html>
