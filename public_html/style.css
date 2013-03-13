@@ -1,0 +1,45 @@
+/* 
+    Document   : style
+    Created on : Mar 12, 2013, 1:12:10 PM
+    Author     : Kriss Rauhvargers
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#intro {
+    color:blue;
+}
+
+p {
+    color:red;
+    font-family:Arial, sans-serif;
+    
+}
+
+h2 {
+    color:black;    
+}
+
+h1 {
+    color: red;
+    font-family: Georgia, sans-serif;
+    border: 1px solid blue;    
+}
+
+ol {
+    background-color:palegoldenrod;
+}
+
+ol li {
+    background-color:green;   
+}
+
+body {
+    background-image:url("https://s-media-cache-ec2.pinimg.com/avatars/gettravel_1354873529_600.jpg");
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-attachment:fixed;
+    background-color:palegoldenrod;
+}
+
+
