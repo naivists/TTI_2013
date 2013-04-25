@@ -1,45 +1,276 @@
-/* 
-    Document   : style
-    Created on : Mar 12, 2013, 1:12:10 PM
-    Author     : Kriss Rauhvargers
-    Description:
-        Purpose of the stylesheet follows.
+/*
+Going to use some web fonts for headings, 
+importing them at the beginning of stylesheet
 */
+@import url(http://fonts.googleapis.com/css?family=Sarina);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,latin-ext);
+@import url(http://weloveiconfonts.com/api/?family=maki);
 
-#intro {
-    color:blue;
+
+root { 
+    display: block;
 }
 
-p {
-    color:red;
-    font-family:Arial, sans-serif;
-    
-}
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
-h2 {
-    color:black;    
-}
-
-h1 {
-    color: red;
-    font-family: Georgia, sans-serif;
-    border: 1px solid blue;    
-}
-
-ol {
-    background-color:palegoldenrod;
-}
-
-ol li {
-    background-color:green;   
-}
-
+/*****
+The first part applies to all browsers that don't support media queries
+*****/
 body {
-    background-image:url("https://s-media-cache-ec2.pinimg.com/avatars/gettravel_1354873529_600.jpg");
-    background-repeat:no-repeat;
-    background-position:right center;
-    background-attachment:fixed;
-    background-color:palegoldenrod;
+    width:800px;
+    box-shadow: 0px 0px 10px #ccc;
+    margin:0 auto;
+    font-family:sans-serif;
 }
+
+header h1{
+    font-family: Sarina, serif;
+    float:right;
+    margin:16px;
+    font-size:20px;
+    color:#555;    
+}
+header {
+    background-color:#F8F8F8;
+    background-image: linear-gradient(to bottom, #F1F1F1 0%, #FFFFFF 100%);
+}
+h2, h3 {
+    font-family:Oswald, serif;
+    line-height:1.6em;
+    margin-bottom:0.5ex;
+    margin-top:0.3ex;
+    font-size:1.4em;
+}
+h3 {
+    font-size:1.2em;
+}
+section:target h2 {
+    margin-right:260px;
+    background-color:#ccc;
+    border-left:1px solid red;
+    padding-left:1em;
+}
+
+ul.partners {
+    list-style-type:none;
+}
+ul.partners li {
+    padding-left:1em;
+}
+ul.airline li:before {
+    font-family: 'maki', sans-serif;
+    content:'\e802';
+    padding-right:0.5em;
+}
+ul.hotel li:before {
+    font-family: 'maki', sans-serif;
+    content:'\e824';
+    padding-right:0.5em;
+}
+
+section {
+    padding-left:1em;
+    padding-right:1em;
+}
+p, ol, ul, dl {
+    line-height:1.4em;
+}
+
+ol.steps, ol.steps ol{
+    margin-left:2em;
+    list-style-type:decimal;
+}
+ol.steps li{
+    
+    display:list-item;
+    list-style-type:roman;
+}
+
+dl#is-safe dd{
+    margin-left:4em;
+    position:relative;
+}
+
+dl#is-safe dt{
+    font-size:18px;
+    line-height: 32px;
+    border-bottom:1px solid #ccc;
+    margin:8px 0px;
+}
+
+dl#is-safe dd:before{
+    position:absolute;
+    left:-1.2em;
+    top:0.3em;
+    
+    color:#ccc;
+    font-family: 'maki', sans-serif;
+    font-size:40px;
+}
+
+dl#is-safe dd#personal-data:before{
+    
+    content:'\e82d';
+}
+dl#is-safe dd#physical-safety:before {
+    content:'\e82b';
+}
+dl#is-safe dd#uptime:before{
+    content:'\e83a';
+}
+
+
+#imagine {
+    background-color:white;
+    border-radius:15px;
+    float:right;
+    width:200px;
+    padding:20px;
+    padding-right:10px;
+    margin:10px 5px 15px 15px;
+}
+#imagine img {
+    max-width:200px;
+}
+
+header h1 .slogan {
+    display:block;
+    font-family: sans-serif;
+    font-size:12px;
+    color:#999;
+}
+nav ul {
+    list-style-type:none;
+    overflow:auto;
+    margin:0 auto;
+    width:100%;
+}
+nav ul li {
+    float:left;
+    width:150px;
+    width:33.3%;
+    
+    font-family: Helvetica, Arial, sans-serif;
+}
+nav ul li a {
+    color:#333;    
+    display:block;
+    border:1px solid #B03A77;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius:8px;
+    border-top:none;
+    border-right:none;
+    background-color:#F1F1F1;
+    padding:6px;
+    margin:4px;
+    
+    font-family:'Roboto Condensed', sans-serif;
+    text-decoration:none;
+    font-size:24px;
+}
+nav ul li a:hover {
+    
+    box-shadow: 4px 4px 0px #CCC;
+}
+
+#support-info{
+    border:1px solid black;
+    width:100%;
+}
+#support-info td, #support-info th{
+    border:1px solid #ccc;
+    padding:3px;
+}
+
+
+footer {
+    border-top:1px solid #ccc;
+    text-align:center;
+    margin-top:2em;
+    padding-top:0.5em;
+    padding-bottom:2em;
+}
+
+
+/*
+Page width less than original body width, most likely we're on a 
+small screen.
+We have to remove one table column as there is not enough space.
+*/
+@media (max-width:800px){
+    body {
+	width:100%;
+	margin:0;
+	padding:0;
+	box-shadow: none;
+	
+    }
+    .semi.irrelevant {
+	display:none;
+    }
+}
+
+/*
+    Oops, getting small. Most likely on a mobile device.   
+    Let's increase the navigation buttons.
+*/
+@media (max-width:600px){
+    header h1{
+	float: none;
+	margin-top:0px;
+	border-bottom:1px solid #ccc;
+	padding:0;
+	margin:0;
+	position:relative;
+	top:4px;
+	left:4px;
+    }
+    nav ul {
+	width:auto;
+    }
+    nav ul li {
+	width:100%;
+	margin-bottom:6px;
+    }
+    nav ul li a {
+	line-height:40px;
+	height:40px;
+    }
+    img {
+	max-width: 48%;
+	max-height: 48%;
+    }
+    
+    img:hover {
+	max-width: 100%;
+	max-height: 100%;
+    }
+    
+    .irrelevant {
+	display:none;
+    }
+}
+
+/*
+    God, even smaller. Delete all decorations. 
+*/
+@media (max-width:500px){
+    #imagine {
+	display:none;
+    }
+    dl#is-safe dd:before {
+	display:none;
+    }
+    dl#is-safe dd {
+	margin-left: 1em;
+    }
+}
+
+
+
+
+
 
 

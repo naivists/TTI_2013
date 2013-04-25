@@ -9,51 +9,47 @@
 	    }
 	</style>
 	<meta name="CreationTime" content="12:14:00">	
+	
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=2.0; user-scalable=1;">
+	<meta name="HandheldFriendly" content="true">
+	
 	<link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>	
-	<section>
-	    <h1><dfn title="Google Travel">GTravel</dfn> online travel scheduler</h1>
-	    <h2>Imagine.... </h2>
+	<header>
+	    <h1><dfn title="Google Travel">GTravel</dfn>
+		<span class="slogan">the online travel scheduler</span></h1>
+	    <nav>
+		<ul>
+		    <li><a href="#about-us">About us</a></li>
+		    <li><a href="#how-works">How does it work</a></li>
+		    <li><a href="#contacts">Contacts</a></li>
+		</ul>
+	    </nav>
 	    
+	</header>
+
+	<aside id="imagine">
+	    <h2>Imagine.... </h2>
 	    <p>
-		<img 
+		<img class="imagine"
 		    src='http://techbeat.com/wp-content/uploads/2013/01/India-Panic-Button-Wristwatch.jpg'
 		    alt="Nice place in India" 
-		    height="200">
-		<img src="images/rio.png"
-		     alt="Picture from Rio de Janeiro"
-		     height="200">
-	    </p>
-	    <p>
-		Temperature in India <meter min="0" max="45" value="23">25&deg;</meter>
-	    </p>
-	    <p>
-		Lecture progress is <progress max="90" value="77">77 out of 90</progress>
-	    </p>
-	    
-	    <video controls autoplay>
-            <source src="video/ad.ogv" type="video/ogg" />
-            <source src="video/ad.mp4" type="video/mp4" />
-            <source src="video/ad.m4v" type="video/mp4" />
-            Your web browser does not support VIDEO. 
-		GTFO!
-	    </video>
-	    <audio src="audio/Pass%20This%20On.mp3" controls>
+		    >
+		<img class="imagine" src="images/rio.png"
+		     alt="Picture from Rio de Janeiro">
 		
-	    </audio>
-	    
-	    <iframe width="420" height="315" 
-		    src="http://www.youtube.com/embed/YXh9RQCvxmg?rel=0"></iframe>
-	   
-	    
+	    </p>
+	</aside>   
+	
+	<section id="about-us">
 	    <h2>About us</h2>
-	    <a href='#contacts'>Jump to contact information</a>
 	    <p>&laquo;<b>GTravel</b>&raquo; is a small, virtual <strong>travel organizer</strong>.
 		We can help you keep travel documents such as airline tickets,
 		hotel reservations and itineraries organized. 		
 	    </p>
-
+	</section>
+	<section id="how-works">
 	    <h2>How does it work?</h2>
 	    <p>
 		Once you register, you are assigned an automatic e-mail address 
@@ -62,7 +58,7 @@
 	    </p>
 
 	    <h3>Steps you need to take</h3>
-	    <ol>
+	    <ol class="steps">
 		<li>You buy the ticket online and wait for the confirmation e-mail</li>
 		<li>Once you receive the e-mail, you forward it to yourname@gtravel.com</li>
 		<li>We process the e-mail text an automatically extract the important data
@@ -75,10 +71,10 @@
 		<li>Voila!</li>
 	    </ol>
 	    <h3>Supported partners</h3>
-	    <ul>		
+	    <ul class="partners">		
 		<li>
 		    <h4>Airlines</h4>
-		    <ul>
+		    <ul class="airline">
 			<li>Air Baltic</li>
 			<li>Lufthansa</li>
 			<li><abbr title="Scandinavian Airline Systems">SAS</abbr></li>
@@ -87,7 +83,7 @@
 		</li>
 		<li>
 		    <h4>Hotels</h4>
-		    <ul>
+		    <ul class="hotel">
 			<li>Best Western</li>
 			<li><a href='http://www.radisson.com' 
 			       title='Visit radisson web site online'>Radisson</a></li>
@@ -97,21 +93,21 @@
 		</li>
 	    </ul>
 
-	    <h2>Is it safe?</h2>
+	    <h3>Is it safe?</h3>
 	    <p>The system is fully automated, no humans are going to read your documents.</p>
-	    <dl>
+	    <dl id="is-safe">
 		<dt>Personal data</dt>
-		<dd>We encrypt all the personal data received using contemporary cryptographic
+		<dd id="personal-data">We encrypt all the personal data received using contemporary cryptographic
 		    methods (AES-265, RSA)</dd>
 		<dd>If you are afraid about the personal data, you may delete sensitive information
 		    from the email body before you forward it to us.</dd>
 
 		<dt>Physical safety</dt>
-		<dd>Our servers are located in a bunker 90 feet under ground. Armed guards keep
+		<dd id="physical-safety">Our servers are located in a bunker 90 feet under ground. Armed guards keep
 		    watch 24/7 and even longer, if necessary.</dd>
 
 		<dt>Service level agreement</dt>
-		<dd>We promise 99.99% uptime.
+		<dd id="uptime">We promise 99.99% uptime.
 		    <small>All day, every day, except the four hours a year 
 			when nothing works</small>.
 
@@ -119,7 +115,7 @@
 	    </dl>
 
 
-	    <h2>Anyone else using this service?</h2>
+	    <h3>Anyone else using this service?</h3>
 	    <p>We have quite a lot satisfied users, ranging from a teenage students to 
 		serious business people. Most users are returning customers, who have been
 		using the service for a long time. Just become one of them</p>
@@ -129,24 +125,22 @@
 		    growing user base.</p>
 		<p>Just a year ago, in early 2012 two Latvian programmers 
 		    Edžus Skudriņš and Olivers Lapsa started the project in order to simplify
-		    organizing their own vacion travel. Currently they employ a <mark>team of 10 people</mark>
+		    organizing their own vacion travel. Currently they employ a team of 10 people
 		    and provide 24/7 support to their customers.</p>
 	    </blockquote>
-	    <p>
-		<q>GTRavel is the best</q>, said someone on the Internet.
-	    </p>
+	    
 	</section>
-	<section>
-	    <h2 id='contacts'>Contact information</h2>
-	    <h3><a href='help.html'>User support</a></h3>
+	<section id='contacts'>
+	    <h2>Contact information</h2>
+	    <h3>User support</h3>
 		
-	    <table border='1'>
+	    <table border='1' id="support-info">
 		<thead>
 		    <tr>
-			<th rowspan='2'>Shift</th>
+			<th class="irrelevant" rowspan='2'>Shift</th>
 			<th rowspan='2'>Time</th>
 			<th colspan='2'>Offline contacts</th>		    
-			<th rowspan='2'>Online contact</th>
+			<th class="semi irrelevant" rowspan='2'>Online contact</th>
 		    </tr>
 		    <tr>
 			<th>Name</th>		    
@@ -155,50 +149,40 @@
 		</thead> 
 		<tbody>
 		    <tr>
-			<td rowspan='3'>Daytime</td>
+			<td class="irrelevant" rowspan='3'>Daytime</td>
 			<td>08:00-13:00</td>
-			<td><del>Jānis Skudriņš</del>
-			    <ins>Pēteris Skudriņš</ins></td>
+			<td>Jānis Skudriņš</td>
 			<td><a href='mailto:janis.skudrins@gtravel.com'>janis.skudrins@gtravel.com</a></td>
-			<td><a href='skype:janis_berzins'>janis_berzins</a></td>
+			<td class="semi irrelevant" ><a href='skype:janis_berzins'>janis_berzins</a></td>
 		    </tr>
 		    <tr>
 			<td>13:00-18:00</td>
 			<td>Viesturs Lapsa</td>
 			<td>viesturs.lapsa@gtravel.com</td>
-			<td>skype:viesturs_lapsa</td>
+			<td class="semi irrelevant">skype:viesturs_lapsa</td>
 		    </tr>
 		    <tr>
 			<td>18:00-23:00</td>
 			<td>Antra Smilga</td>
 			<td>antra.smilga@gtravel.com</td>
-			<td>skype:antra_smilga</td>
+			<td class="semi irrelevant">skype:antra_smilga</td>
 		    </tr>
 		    <tr>
-			<td>At night</td>
+			<td class="irrelevant" >At night</td>
 			<td>23:00-08:00</td>
 			<td>Jānis Skudriņš</td>
 			<td>janis.skudrins@gtravel.com</td>
-			<td>skype:janis_skudrins</td>
+			<td class="semi irrelevant">skype:janis_skudrins</td>
 		    </tr>
 		</tbody>
 	    </table>
 
+	    <h3>Address and location</h3>
+	    <address>
 	    <p>Raina blvd. 19,<br>
 	       Riga,<br>
 	       Latvia</p>
-	    <pre>
-	    
-    ==========================
-    
-         Raiņa bulvāris
-    
-    ============      =========
-               |      |  
-	       | *US* |
-	       
-	       
-	    </pre>
+	    </address>
 	</section>
 
 	<footer>
