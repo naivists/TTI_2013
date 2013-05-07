@@ -34,8 +34,17 @@ header h1{
 }
 header {
     background-color:#F8F8F8;
-    background-image: linear-gradient(to bottom, #F1F1F1 0%, #FFFFFF 100%);
+    
+    background-image: linear-gradient(to bottom, #F1F1F1 0%, #FFFFFF 100%);    
 }
+
+.something-important {
+    border : 1px solid red;
+    background-color: yellow;
+    font-size:1.5em;
+    font-weight:bold;
+}
+
 h2, h3 {
     font-family:Oswald, serif;
     line-height:1.6em;
@@ -146,6 +155,7 @@ nav ul {
     overflow:auto;
     margin:0 auto;
     width:100%;
+    clear:both;
 }
 nav ul li {
     float:left;
@@ -270,7 +280,17 @@ We have to remove one table column as there is not enough space.
 
 
 
-
-
-
-
+.banner {
+    padding:20px;
+    margin:8px;
+    border:1px solid #777;
+    background-color:#EFEFEF;
+    color:navy;
+}
+.close-ad {
+    float:right;
+    cursor:pointer;
+}
+.close-ad:after{
+    content: "x";    
+}

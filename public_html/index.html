@@ -11,12 +11,12 @@
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=2.0; user-scalable=1;">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
 	<meta name="HandheldFriendly" content="true">
-	
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="script.js"></script>
     </head>
-    <body>	
+    <body>		
 	<header>
 	    <h1><dfn title="Google Travel">GTravel</dfn>
 		<span class="slogan">the online travel scheduler</span></h1>
@@ -27,22 +27,26 @@
 		    <li><a href="#contacts">Contacts</a></li>
 		</ul>
 	    </nav>
-	    
 	</header>
+	
 
 	<aside id="imagine">
 	    <h2>Imagine.... </h2>
 	    <p>
 		<img class="imagine"
-		    src='http://techbeat.com/wp-content/uploads/2013/01/India-Panic-Button-Wristwatch.jpg'
-		    alt="Nice place in India" 
-		    >
+		     src='http://techbeat.com/wp-content/uploads/2013/01/India-Panic-Button-Wristwatch.jpg'
+		     alt="Nice place in India" 
+		     >
 		<img class="imagine" src="images/rio.png"
 		     alt="Picture from Rio de Janeiro">
-		
+
 	    </p>
-	</aside>   
+	</aside> 
 	
+	<button id="jsTestButton">
+	    Do something!
+	</button>
+
 	<section id="about-us">
 	    <h2>About us</h2>
 	    <p>&laquo;<b>GTravel</b>&raquo; is a small, virtual <strong>travel organizer</strong>.
@@ -129,12 +133,12 @@
 		    organizing their own vacion travel. Currently they employ a team of 10 people
 		    and provide 24/7 support to their customers.</p>
 	    </blockquote>
-	    
+
 	</section>
 	<section id='contacts'>
 	    <h2>Contact information</h2>
 	    <h3>User support</h3>
-		
+
 	    <table border='1' id="support-info">
 		<thead>
 		    <tr>
@@ -180,16 +184,17 @@
 
 	    <h3>Address and location</h3>
 	    <address>
-	    <p>Raina blvd. 19,<br>
-	       Riga,<br>
-	       Latvia</p>
+		<p>Raina blvd. 19,<br>
+		    Riga,<br>
+		    Latvia</p>
 	    </address>
 	</section>
 
 	<footer>
 	    <p>&copy; 2013, GTravel.com</p>
 	    <p>Page last updated <time datetime="2013-03-05">March 5th, 2013.</time></p>
-	    
+
 	</footer>
+
     </body>
 </html>

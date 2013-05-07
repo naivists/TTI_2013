@@ -1,0 +1,92 @@
+/* 
+    Document   : style
+    Created on : Mar 12, 2013, 1:12:10 PM
+    Author     : Kriss Rauhvargers
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('Chunkfive-webfont.eot');
+    src: url('Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Chunkfive-webfont.woff') format('woff'),
+         url('Chunkfive-webfont.ttf') format('truetype'),
+         url('Chunkfive-webfont.svg#ChunkFiveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+
+#intro {
+    color:blue;
+}
+
+p {
+    color:red;
+    font-family:Georgia, Times, Times New Roman, serif;
+    font-size: 16px;
+    line-height:150%;
+}
+
+h2 {
+    color:black;    
+}
+
+h1 {
+    color: red;
+    font-family: ChunkFiveRegular, cursive;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 40px;
+    /*font-variant: small-caps;*/
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+    width:450px;
+    height:90px;
+    overflow: visible;
+    
+    text-shadow:3px 3px 5px green, -3px -3px 5px blue;
+    
+    border: 5px dotted blue;
+    margin: 0px auto;
+    
+    /*background-image: url("http://www.gifs.net/Animation11/Animals/Penguins/Small_penguin_falls.gif");
+    */
+    background-image:url("data:image/gif;base64,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%3D%3D");
+    background-repeat: no-repeat;
+    background-size:20px 20px;
+    background-color:white;
+    padding:20px;
+    padding-left:40px;
+    
+    
+}
+
+ol {
+    background-color:palegoldenrod;
+    list-style-type: circle;
+    list-style-image: url("http://www.depts.ttu.edu/hs/cdrc/images/flower.jpg");
+}
+
+ol li {
+    background-color:#c0f030;
+}
+
+body {
+    background-image:url("https://s-media-cache-ec2.pinimg.com/avatars/gettravel_1354873529_600.jpg");
+    /*background-size:cover;
+    */background-repeat:no-repeat;
+    background-position:right center;
+    background-attachment:fixed;
+    background-color:palegoldenrod;
+}
+
+
