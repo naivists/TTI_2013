@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>GTravel online travel scheduler</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1">
+	<meta name="HandheldFriendly" content="true">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="form.js"></script>
+    </head>
+    <body>		
+	<header>
+	    <h1><dfn title="Google Travel">GTravel</dfn>
+		<span class="slogan">the online travel scheduler</span></h1>
+	    <nav>
+		<ul>
+		    <li><a href="index.html#about-us">About us</a></li>
+		    <li><a href="index.html#how-works">How does it work</a></li>
+		    <li><a href="index.html#contacts">Contacts</a></li>
+		    <li><a href="wizard.html#form">Try it!</a></li>
+		</ul>
+	    </nav>
+	</header>
+
+
+
+	<section id="form">
+	    <form action="http://naivist.net/form" method="post" id="mainForm">
+		<fieldset>
+		    <legend>Tell us about yourself</legend>
+		    <dl>
+			<dt><label for="person-name">Name</label></dt>
+			<dd>
+			    <input type="text" name="person-name"
+				   id="person-name" maxlength="30" />
+
+			    <span class="mandatory">*</span>
+			    <span class="explanation-required">Please, fill out your name</span></dd>
+
+			<dt><label for="person-surname">Surname</label></dt>
+			<dd><input type="text" name="person-surname" id="person-surname" /> 
+			    <span class="mandatory">*</span>
+			    <span class="explanation-required">Please, fill out your surname</span>
+			</dd>
+
+			<dt><label for="person-title">Title</label></dt>
+			<dd>
+			    <select id="person-title" name="person-title">
+				<option></option>
+				<optgroup label="Gender" >
+				    <option>Mr.</option>
+				    <option>Ms.</option>
+				</optgroup>
+				<optgroup label="Academic">
+				    <option>Dr.</option>
+				    <option>Prof.</option>
+				</optgroup>
+			    </select>
+			    <span class="mandatory">*</span>
+			    <span class="explanation-required">Please, pick a title</span>
+			</dd>
+		    </dl>				
+		</fieldset>
+		<fieldset>
+		    <legend>What are you up to?</legend>
+		    <dl>
+			<dt>So, the main purpose is...</dt>
+			<dd>
+			    <input type="radio" 
+				   name="travel-type"
+				   id="travel-type-vacation" />
+			    <label for="travel-type-vacation">Vacation</label>
+			    <br />
+			    <input type="radio" name="travel-type" id="travel-type-business" />
+			    <label for="travel-type-business">Business travel</label>
+			    <br />
+			    <input type="radio" name="travel-type" id="travel-type-religious" />
+			    <label for="travel-type-religious">Religious</label>
+			    <div>
+				<span class="explanation-required">Please, pick a purpose</span>
+			    </div>
+			</dd>
+
+			<dt>For how many days?</dt>
+			<dd>
+			    <input type="text" name="travel-days" id="travel-days"/>
+			    <span class="explanation-required">Enter the length of your travel in days</span>
+			    <span class="explanation-numeric">Please enter a number</span>
+			</dd>
+
+			<dt>Starting in at...</dt>
+			<dd>
+			    <input type="text" name="travel-begin" id="travel-begin" placeholder="dd.mm.yyyy"/>
+
+			    <span class="explanation-format">The value is not a valid date</span>
+			    <span class="explanation-required">Please, enter the start date</span>
+			</dd>
+		    </dl>
+		</fieldset>
+		<p>
+		    <ul id="validation-summary"></ul>
+		    <input type="submit" value="Help me with it!" id="form-submit"  />
+		</p>
+	    </form>
+	</section>
+
+
+	<footer>
+	    <p>&copy; 2013, GTravel.com</p>
+	    <p>Page last updated <time datetime="2013-03-05">March 5th, 2013.</time></p>
+
+	</footer>
+
+    </body>
+</html>

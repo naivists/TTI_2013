@@ -45,7 +45,7 @@ header {
     font-weight:bold;
 }
 
-h2, h3 {
+h2, h3, form legend {
     font-family:Oswald, serif;
     line-height:1.6em;
     margin-bottom:0.5ex;
@@ -160,7 +160,7 @@ nav ul {
 nav ul li {
     float:left;
     width:150px;
-    width:33.3%;
+    width:25%;
     
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -293,4 +293,49 @@ We have to remove one table column as there is not enough space.
 }
 .close-ad:after{
     content: "x";    
+}
+
+/******************************************
+Input forms
+*/
+form span.mandatory {color:red;}
+
+form dt label {
+	float:left;
+	width:130px;
+	
+}
+
+form dd {
+	display:block;
+	margin-left:130px;
+}
+
+form dt, dd{
+	margin-top:10px;
+	
+}
+
+#form-submit{
+    width:100%;
+    margin:0;
+}
+
+input[class*=error] {
+    border:2px solid red;
+}
+
+form span[class*=explanation] {
+    display:none;
+}
+
+form span[class*=explanation].visible {
+    display:inline;
+}
+
+
+#validation-summary {
+	color:red; 
+	list-style-type:circle;
+	padding:20px;
 }
