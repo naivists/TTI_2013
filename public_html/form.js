@@ -143,6 +143,7 @@ function validateFormSubmit() {
 
     if (errors.length >0){
         var summary = $("validation-summary");
+        summary.innerHTML= "";
         for (i = 0; i < errors.length; i=i+1) {
             var err = document.createElement("LI");
             err.innerHTML = errors[i];

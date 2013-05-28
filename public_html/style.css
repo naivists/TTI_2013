@@ -32,6 +32,10 @@ header h1{
     font-size:20px;
     color:#555;    
 }
+header h1 a {
+    color:#555;    
+    text-decoration:none;
+}
 header {
     background-color:#F8F8F8;
     
@@ -331,6 +335,7 @@ form span[class*=explanation] {
 
 form span[class*=explanation].visible {
     display:inline;
+    color:red;
 }
 
 
@@ -338,4 +343,24 @@ form span[class*=explanation].visible {
 	color:red; 
 	list-style-type:circle;
 	padding:20px;
+}
+
+
+/**********************************************
+The game page
+********/
+/*.game {display:none;}*/
+
+#europe-game li input {
+    margin:10px;
+ 
+}
+
+.game .wrong {
+    background-color:red;
+    margin:0;
+}
+.game .right {
+    background-color:green;
+    margin:0;
 }
