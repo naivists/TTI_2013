@@ -11,7 +11,25 @@
  */
 class Controller_Welcome extends Controller
 {
-
+	public function action_helloworld(){
+//	    $response  = Response::forge();
+//	    
+//	    $viewdata = array();
+//	    $viewdata["title"] = rand(13284, 130249132);
+//	    $viewdata["data"] = "<script>alert('blabla')</script>";
+	    $events = new Model_Crudevent();
+	    
+	    print_r($events->find_all());
+	    die();
+	    
+	    
+	    $viewdata["countries"] = array(); //model_Welcomecountries::get_list();
+	    
+	    $response->body = View::forge('welcome/helloworld', $viewdata);
+	    
+	    return $response;
+	}
+    
 	/**
 	 * The basic welcome message
 	 * 
