@@ -10,6 +10,8 @@ class Controller_Public extends Controller_Template {
     public function before() {
 	parent::before();
 	
+	
+	
 	$auth = Auth::instance();
 	$user_id = $auth->get_user_id();
 	//when logged in, the ID will be put in the array as 
